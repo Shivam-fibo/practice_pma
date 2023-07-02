@@ -1,0 +1,313 @@
+.container_su {
+    display: flex;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #00000052;
+    width: 1030px;
+    margin-left: 240px;
+    background-color: #F5E8FA;
+}
+.active {
+    display: block;
+
+}
+
+.inactive {
+    display: none;
+}
+
+.container_right_su {
+
+    /*flex: 1;*/
+    padding: 20px;
+    margin-right: 50px;
+
+}
+
+.signup {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Playfair Display', 'Faustina';
+    position: relative;
+}
+
+.container_left_su {
+    flex: 2;
+    margin-top: 90px;
+}
+
+img {
+    width: 650px;
+    height: 530px;
+}
+
+.pl_su {
+    padding-left: 10px;
+
+}
+
+.or_su {
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
+.google_su {
+    display: inline;
+    background-color: white;
+    width: 249px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border-radius: 8px;
+}
+
+.text {
+    padding-left: 10px;
+    display: inline;
+    background-color: white;
+    width: 249px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.email_su {
+
+    display: inline;
+    background-color: white;
+    width: 249px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.number {
+    display: inline;
+    width: 249px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.password_su {
+    display: inline;
+    width: 249px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.su_btn {
+    appearance: button;
+    background-color: #E034D5;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 8px 10px;
+    font-size: 100%;
+    margin-left: 10px;
+    width: 249px;
+}
+
+.loginuplink {
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+/* Styles for desktop screens */
+@media screen and (min-width: 1024px) {
+
+    /* Add your desktop styles here */
+    .container_su {
+        display: flex;
+        border-radius: 10px 10px 10px 10px;
+        border: 1px solid #00000052;
+        width: 1030px;
+        margin-left: 240px;
+        background-color: #F5E8FA;
+        max-width: 100%;
+    }
+
+    .container_right_su {
+
+        padding: 20px;
+        margin-right: 50px;
+    }
+
+    .signup {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .container_left_su {
+        flex: 2;
+        margin-top: 90px;
+    }
+
+    .pl_su {
+        padding-left: 10px;
+
+    }
+
+    .or_su {
+        margin-left: 120px;
+    }
+
+    .google_su {
+        display: inline;
+        background-color: white;
+        width: 249px;
+        height: 30px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        border-radius: 8px;
+    }
+
+    .text {
+        padding-left: 10px;
+        display: inline;
+        background-color: white;
+        width: 249px;
+        height: 30px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        border-radius: 8px;
+    }
+
+    .email_su {
+
+        display: inline;
+        background-color: white;
+        width: 249px;
+        height: 30px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        border-radius: 8px;
+    }
+
+    .number {
+        display: inline;
+        width: 249px;
+        height: 30px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        border-radius: 8px;
+
+    }
+
+    .password {
+        display: inline;
+        width: 249px;
+        height: 30px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        border-radius: 8px;
+    }
+
+    h4 {
+        margin-left: 80px;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+
+    .su_btn {
+        appearance: button;
+        background-color: #E034D5;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 8px 10px;
+        font-size: 100%;
+        margin-left: 10px;
+        width: 249px;
+    }
+}
+
+/* Styles for tablet screens */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* Add your tablet styles here */
+    .container_su {
+        max-width: 100%;
+        width: 350px;
+        align-items: center;
+        margin-top: 10px;
+        padding: 40px 40px 40px 30px;
+        display: flex;
+        left: 80px;
+        flex-direction: column;
+        position: absolute;
+        border: 1px solid #00000052;
+        border-radius: 10px 10px 10px 10px;
+
+    }
+
+    .container_right_su {
+        display: none;
+
+    }
+
+    .container_left_su {
+        margin-top: 10px;
+    }
+
+    .su_btn {
+        font-size: 20px;
+    }
+
+    .google_su {
+        display: inline;
+        background-color: white;
+        width: 249px;
+        height: 30px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        border-radius: 8px;
+    }
+}
+
+/* Styles for mobile screens */
+@media screen and (max-width: 767px) {
+
+    /* Add your mobile styles here */
+    .container_su {
+        max-width: 100%;
+        width: 350px;
+        align-items: center;
+        margin-top: 10px;
+        padding: 40px 40px 40px 30px;
+        display: flex;
+        left: -160px;
+        flex-direction: column;
+        position: absolute;
+        border: 1px solid #00000052;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .container_right_su {
+        display: none;
+    }
+
+    .container_left_su {
+        margin-top: 10px;
+    }
+
+    .su_btn {
+        font-size: 20px;
+    }
+
+    .google_su {
+        display: inline;
+        background-color: white;
+        width: 249px;
+        height: 30px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        border-radius: 8px;
+    }
+}

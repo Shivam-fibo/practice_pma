@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import NavBar from './components/NavBar/NavBar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Pages/Home.jsx';
+import About from './components/Pages/About.jsx';
+import Blog from './components/Pages/Blog.jsx';
+import Contact from './components/Pages/Contact.jsx';
+import { LoginPage, AboutPage } from './routes/Routes';
+import { useDispatch } from 'react-redux';
+import Editor from './Editor';
+import { pageLoad } from './redux/actions/pageAction';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const dispatch = useDispatch();
+	useEffect(
+		() => {
+			pageLoad()(dispatch);
+		},
+		[ dispatch ]
+	);
+	return (
+		<div>
+			<Router>
+				{/* <NavBar /> */}
+
+				<div className="pages">
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/blog" element={<Blog />} />
+						<Route path="/contact" element={<Contact />} />
+						<Route path="/auth" element={<LoginPage />} />
+						<Route path="/about" element={<AboutPage />} />
+						<Route path="/editor" element={<Editor />} />
+					</Routes>
+				</div>
+			</Router>
+		</div>
+	);
 }
 
 export default App;
