@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './NavBar.css';
-import DarkMode from '../DarkMode/DarkMode';
+import userImage from '../../assets/images/userImage.jpg';
+import Popup from 'reactjs-popup';
+import NavBarElement from './NavBarElement';
+// import DarkMode from '../DarkMode/DarkMode';
 
 function NavBar() {
 	const [ click, setClick ] = useState(false);
-	const [ login, setLogin ] = useState(true);
+	const [ login, setLogin ] = useState(false);
 
 	const handleClick = () => {
 		if (click) {
@@ -67,10 +70,21 @@ function NavBar() {
 								</div>
 							) : (
 								<div className="userIfLogin flex items-center">
-									<Link to="/profile" className="flex items-center mr-4">
-										<img className="userImage" src="" alt="" />
-										<p className="userName ml-2">USER</p>
-									</Link>
+									<Popup
+										trigger={
+											<div className="flex items-center mr-4">
+												<img
+													src={userImage}
+													alt=""
+													style={{ width: '50px', height: '50px', borderRadius: '50%' }}
+												/>
+												<p className="userName ml-2">USER</p>
+											</div>
+										}
+										position="bottom right"
+									>
+										<NavBarElement />
+									</Popup>
 								</div>
 							)}
 						</li>

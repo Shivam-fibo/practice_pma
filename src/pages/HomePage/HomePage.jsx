@@ -10,6 +10,7 @@ import img3 from '../../assets/images/img3.png';
 // import instagram from '../../assets/images/instagram.png';
 // import twitter from '../../assets/images/twitter.png';
 import 'bootstrap/dist/css/bootstrap.css';
+import NavBar from '../../components/NavBar/NavBar';
 
 // import userImage from '../../assets/images/userImage.jpg';
 
@@ -21,6 +22,7 @@ const HomePage = () => {
 	let login = false;
 	return (
 		<div>
+			<NavBar />
 			{/* ---------------------------MAIN BODY---------------------- */}
 			<section className="main_body">
 				<div className="row">

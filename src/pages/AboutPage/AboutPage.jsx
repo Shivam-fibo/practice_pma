@@ -7,6 +7,7 @@ import { BiLogoFacebook } from 'react-icons/bi';
 
 import { AiFillInstagram } from 'react-icons/ai';
 import { BsTwitter } from 'react-icons/bs';
+import NavBar from '../../components/NavBar/NavBar';
 
 export default function Hero() {
 	const [ mode, setMode ] = useState('light');
@@ -17,6 +18,8 @@ export default function Hero() {
 
 	return (
 		<div>
+			<NavBar />
+
 			{/*------------------------------- Hero Section -------------------------------*/}
 
 			<div className="hero">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { userLogin } from '../../API/Auth';
 import login from '../../assets/images/login.png';
 import { GoogleLogin } from 'react-google-login';
@@ -27,6 +27,14 @@ const Login = ({ toggleLogin, handleToggle }) => {
 			[name]: value
 		});
 	};
+
+	useEffect(() => {
+		const accessToken = localStorage.getItem('pmaToken');
+		if (accessToken) {
+			navigate('/');
+			console.log('User is already logged in.');
+		}
+	}, []);
 
 	const isValidEmail = (email) => {
 		// Regular expression pattern for email validation

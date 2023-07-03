@@ -21,13 +21,10 @@ function App() {
 	return (
 		<div>
 			<Router>
-				<NavBar />
-
 				<div className="pages">
 					<Routes>
 						<Route path="/" element={<HomePage />} />
 						<Route path="/blog" element={<Blog />} />
-						<Route path="/contact" element={<Contact />} />
 						<Route path="/auth" element={<LoginPage />} />
 						<Route path="/about" element={<AboutPage />} />
 						<Route path="/editor" element={<Editor />} />
