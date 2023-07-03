@@ -5,7 +5,7 @@ import DarkMode from '../DarkMode/DarkMode';
 
 function NavBar() {
 	const [ click, setClick ] = useState(false);
-	const [ login, setLogin ] = useState(false);
+	const [ login, setLogin ] = useState(true);
 
 	const handleClick = () => {
 		if (click) {
@@ -51,21 +51,19 @@ function NavBar() {
 							</NavLink>
 						</li>
 						<li className="nav-item">
-							<NavLink
-								exact
-								to="/contact"
-								activeClassName="active"
-								className="nav-links"
-								onClick={handleClick}
-							>
+							<a href="#footer" activeClassName="active" className="nav-links" onClick={handleClick}>
 								Contact Us
-							</NavLink>
+							</a>
 						</li>
 						<li>
 							{login ? (
 								<div className="userIfNotLogin">
-									<button className="log_btn mr-4">Log In</button>
-									<button className="sign_btn">Sign Up</button>
+									<Link to="/auth">
+										<button className="log_btn mr-4">Log In</button>
+									</Link>
+									<Link to="/auth">
+										<button className="sign_btn">Sign Up</button>
+									</Link>
 								</div>
 							) : (
 								<div className="userIfLogin flex items-center">
@@ -76,7 +74,7 @@ function NavBar() {
 								</div>
 							)}
 						</li>
-						<DarkMode />
+						{/* <DarkMode /> */}
 					</ul>
 					<div className="nav-icon" onClick={handleClick}>
 						<i className={click ? 'fas fa-times' : 'fas fa-bars'} />

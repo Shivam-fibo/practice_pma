@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './AboutPage.css';
-import photo1 from '../../../assets/images/photo1.jpg';
-import mission from '../../../assets/images/mission.jpg';
+import photo1 from '../../assets/images/photo1.jpg';
+import mission from '../../assets/images/mission.jpg';
 import { BiLogoFacebook } from 'react-icons/bi';
 // import Testimonials from '../Testimonals/Testimonals';
 
