@@ -116,8 +116,8 @@ img {
 }
 
 .loginuplink {
-    margin-top: 25px;
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 25px;
 }
 
 /* Styles for desktop screens */
@@ -210,11 +210,11 @@ img {
         border-radius: 8px;
     }
 
-    h4 {
+    /* h4 {
         margin-left: 80px;
         margin-bottom: 10px;
         font-weight: 400;
-    }
+    } */
 
     .su_btn {
         appearance: button;

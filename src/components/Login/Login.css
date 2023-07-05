@@ -214,9 +214,9 @@ h2 {
         width: 249px;
     }
 
-    .signuplink {
-        margin-top: 25px;
-        margin-left: -200px;
+    .signupLink {
+        margin-top: 20px;
+        margin-left: 20px;
     }
 
 }
@@ -288,7 +288,7 @@ h2 {
         border-radius: 8px;
     }
 
-    .signuplink {
+    .signupLink {
         margin-left: 15px;
         margin-top: 15px;
     }
@@ -361,7 +361,7 @@ h2 {
         border-radius: 8px;
     }
 
-    .signuplink {
+    .signupLink {
         margin-left: 15px;
         margin-top: 15px;
     }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import './HomePage.css';
 import home from '../../assets/images/home.jpg';
 import img1 from '../../assets/images/img1.png';
@@ -11,6 +11,7 @@ import img3 from '../../assets/images/img3.png';
 // import twitter from '../../assets/images/twitter.png';
 import 'bootstrap/dist/css/bootstrap.css';
 import NavBar from '../../components/NavBar/NavBar';
+import { useNavigate } from 'react-router-dom';
 
 // import userImage from '../../assets/images/userImage.jpg';
 
@@ -18,8 +19,29 @@ import NavBar from '../../components/NavBar/NavBar';
 // import HomePagePricingCard from "../../components/HomePagePricing/HomePagePricingCard";
 
 // import { prices } from "../../Mock/Price";
+
 const HomePage = () => {
-	let login = false;
+	const navigate = useNavigate();
+	const handleLogin = () =>{
+		navigate('/auth');
+	};
+	// let login = false;
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+	const token = localStorage.getItem('pmaToken');
+    
 	return (
 		<div>
 			<NavBar />
@@ -45,7 +67,14 @@ const HomePage = () => {
 						<div>
 							<button type="button" className="btn btn-warning btn-lg">
 								Get Started
+	
 							</button>
+							{windowWidth < 670 && !token && (
+								<button onClick={handleLogin} type="button" className="btn btn-warning btn-lg ml-4">
+								Login
+								</button>
+							)}
+							
 						</div>
 					</div>
 				</div>
