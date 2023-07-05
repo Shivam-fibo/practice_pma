@@ -10,7 +10,7 @@ import geditorConfig from './api_utils/geditor_config';
 import PageSection from './components/grapesJsComp/PageSection';
 
 const Editor = () => {
-	const [ editor, setEditor ] = useState(null);
+	const [ editor, setEditor ] = useState(undefined);
 	const [ assets, setAssets ] = useState([]);
 	const { pageId } = useParams();
 
