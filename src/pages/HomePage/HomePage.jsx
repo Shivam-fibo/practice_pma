@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import './HomePage.css';
 import home from '../../assets/images/home.jpg';
 import img1 from '../../assets/images/img1.png';
@@ -21,27 +21,7 @@ import { useNavigate } from 'react-router-dom';
 // import { prices } from "../../Mock/Price";
 
 const HomePage = () => {
-	const navigate = useNavigate();
-	const handleLogin = () =>{
-		navigate('/auth');
-	};
-	// let login = false;
-	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-	const token = localStorage.getItem('pmaToken');
-    
+	let login = false;
 	return (
 		<div>
 			<NavBar />
@@ -65,16 +45,15 @@ const HomePage = () => {
 				<div className="row">
 					<div className="col-md-12 text-center mt-4">
 						<div>
-							<button type="button" className="btn btn-warning btn-lg">
+							<button type="button" onClick={handleBtnClick} className="btn btn-warning btn-lg">
 								Get Started
-	
 							</button>
-							{windowWidth < 670 && !token && (
+							{windowWidth < 670 &&
+							!token && (
 								<button onClick={handleLogin} type="button" className="btn btn-warning btn-lg ml-4">
-								Login
+									Login
 								</button>
 							)}
-							
 						</div>
 					</div>
 				</div>
