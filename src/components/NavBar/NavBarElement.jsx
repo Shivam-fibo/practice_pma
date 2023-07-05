@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 const NavBarElement = () => {
+	const navigate = useNavigate();
 	const [ data, setData ] = useState({
 		name: '',
 		email: '',
@@ -15,6 +17,13 @@ const NavBarElement = () => {
 			[name]: value
 		});
 	};
+	const handleLogOut = (e) => {
+		e.preventDefault();
+	};
+	const handleUserProfile = (e) => {
+		e.preventDefault();
+		navigate('/auth');
+	};
 
 	return (
 		<div class="flex flex-col items-start justify-start top-0 px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -23,7 +32,7 @@ const NavBarElement = () => {
 				style={{ backgroundColor: 'var(--container-color)' }}
 			>
 				<h2
-					class="mb-1 ml-20 pl-12 text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl"
+					class="mb-1 ml-2 pl-6 text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl"
 					style={{ color: 'var(--dark-font)' }}
 				>
 					User Profile
@@ -86,18 +95,18 @@ const NavBarElement = () => {
 							disabled
 						/>
 					</div>
-					<div class="ml-20">
+					<div class="ml-2">
 						<button
-							type="submit"
-							class="w-1/3 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-							style={{ backgroundColor: 'var(--button-color)', color: 'var(--button-font)' }}
+							onClick={handleLogOut}
+							class="w-1/3 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-2 py-2.5  text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+							style={{ backgroundColor: 'var(--button-color_new)', color: 'var(--button-font)' }}
 						>
 							Logout
 						</button>
 						<button
-							type="submit"
-							class="w-1/3 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm ml-2 px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-							style={{ backgroundColor: 'var(--button-color)', color: 'var(--button-font)' }}
+							onClick={handleUserProfile}
+							class="w-1/3 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm ml-2 px-2 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+							style={{ backgroundColor: 'var(--button-color_new)', color: 'var(--button-font)' }}
 						>
 							Edit
 						</button>
