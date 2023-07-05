@@ -139,7 +139,7 @@ const Login = ({ toggleLogin, handleToggle }) => {
 								cookiePolicy={'single_host_origin'}
 							/>
 						</div>
-						<h4 className="or">or</h4>
+						<h5 className="or">or</h5>
 						<div>
 							<input
 								type="text"
@@ -164,9 +164,9 @@ const Login = ({ toggleLogin, handleToggle }) => {
 							Log In
 						</button>
 						<div className="signupLink">
-							<h4>
+							<p>
 								Don't have an account? <b onClick={handleToggle}>Sign Up</b>
-							</h4>
+							</p>
 						</div>
 						{data.error && <div className="error">{data.error}</div>}
 					</form>

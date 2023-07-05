@@ -131,7 +131,7 @@ const SignUp = ({ toggleLogin, handleToggle }) => {
 								cookiePolicy={'single_host_origin'}
 							/>
 						</div>
-						<h4 className="or_su">or</h4>
+						<h5 className="or_su">or</h5>
 						<div>
 							<input
 								type="text"
@@ -201,7 +201,7 @@ const SignUp = ({ toggleLogin, handleToggle }) => {
 						{data.error && <div className="error">{data.error}</div>}
 					</form>
 					<div className="loginuplink">
-						if already have account<b onClick={handleToggle}>Login</b>
+						If already have account<b onClick={handleToggle}> Login</b>
 					</div>
 				</div>
 			</div>

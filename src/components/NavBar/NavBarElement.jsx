@@ -17,14 +17,6 @@ const NavBarElement = () => {
 			[name]: value
 		});
 	};
-	const handleLogOut = (e) => {
-		e.preventDefault();
-		localStorage.removeItem('pmaToken');
-	};
-	const handleUserProfile = (e) => {
-		e.preventDefault();
-		navigate('/userProfile');
-	};
 
 	return (
 		<div class="flex flex-col items-start justify-start top-0 px-6 py-8 mx-auto md:h-screen lg:py-0">
