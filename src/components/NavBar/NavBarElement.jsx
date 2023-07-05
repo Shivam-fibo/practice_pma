@@ -19,10 +19,11 @@ const NavBarElement = () => {
 	};
 	const handleLogOut = (e) => {
 		e.preventDefault();
+		localStorage.removeItem('pmaToken');
 	};
 	const handleUserProfile = (e) => {
 		e.preventDefault();
-		navigate('/auth');
+		navigate('/userProfile');
 	};
 
 	return (

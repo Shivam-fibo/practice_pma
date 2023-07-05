@@ -1,0 +1,134 @@
+Footer section css code .footer {
+    display: flex;
+    margin-top: 20px;
+    font-size: 25px;
+
+}
+
+.footer>div {
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+a {
+    /* color: #eee; */
+    text-decoration: none;
+}
+
+.footer_container1 {
+    margin-top: 35px;
+    margin-left: 10px;
+
+}
+
+.footer_container2 {
+    margin-left: 170px;
+}
+
+.footer_container3 {
+    margin-left: 170px;
+}
+
+.footer_container4 {
+    margin-left: 170px;
+}
+
+.footer_container5 {
+    margin-left: 250px;
+}
+
+a {
+    margin-bottom: 10px;
+}
+
+
+/* media query */
+@media(max-width:768px) {
+
+    .sections {
+        /* margin-top: 50px; */
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+
+
+
+    }
+
+    .footer_container1 {
+        margin-left: 50px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .footer_container2 {
+        margin-left: 50px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .footer_container3 {
+        margin-left: 50px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .footer_container4 {
+        margin-left: 50px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .footer_container5 {
+        margin-left: 50px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .gap {
+        height: 100px;
+    }
+
+    .sections {
+        /* margin-top: 50px; */
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+
+    }
+
+    .footer_container1 {
+        margin-left: 50px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .footer_container2 {
+        margin-left: 50px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .footer_container3 {
+        margin-left: 50px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .footer_container4 {
+        margin-left: 50px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .footer_container5 {
+        margin-left: 50px;
+        text-align: center;
+        margin-top: 25px;
+    }
+}
