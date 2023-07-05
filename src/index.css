@@ -23,6 +23,10 @@
   --warning-background-color: #fff3cd;
   --button-color: #f5f5f5;
   --like-button: #9b5a5a;
+  --button-color_new: #E034D5;
+  --button-font: white;
+  --dark-font: black;
+  --container-color: #F5E8FA;
 }
 
 [data-theme='dark'] {
@@ -47,6 +51,7 @@
   --button-color: #ffffff;
   --like-button: #ffffff;
 }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -58,4 +63,3 @@ body {
   height: 100vh;
   width: 100%;
 }
-
