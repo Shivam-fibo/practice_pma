@@ -11,6 +11,7 @@ import img3 from '../../assets/images/img3.png';
 // import twitter from '../../assets/images/twitter.png';
 import 'bootstrap/dist/css/bootstrap.css';
 import NavBar from '../../components/NavBar/NavBar';
+import { useNavigate } from 'react-router-dom';
 
 // import userImage from '../../assets/images/userImage.jpg';
 
@@ -18,8 +19,13 @@ import NavBar from '../../components/NavBar/NavBar';
 // import HomePagePricingCard from "../../components/HomePagePricing/HomePagePricingCard";
 
 // import { prices } from "../../Mock/Price";
+
 const HomePage = () => {
 	let login = false;
+	const navigate=useNavigate()
+	const handleBtnClick=()=>{
+		navigate('/editor')
+	}
 	return (
 		<div>
 			<NavBar />
@@ -43,7 +49,7 @@ const HomePage = () => {
 				<div className="row">
 					<div className="col-md-12 text-center mt-4">
 						<div>
-							<button type="button" className="btn btn-warning btn-lg">
+							<button type="button" onClick={handleBtnClick} className="btn btn-warning btn-lg">
 								Get Started
 							</button>
 						</div>
