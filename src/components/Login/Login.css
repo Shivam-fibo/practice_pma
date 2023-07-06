@@ -24,15 +24,16 @@
 /*.d-none{
     display: none;
 }*/
-.container {
+.container_login {
     /* margin-top: 25px;
     margin-left: 25px; */
     border: 1px solid #00000052;
     border-radius: 10px 10px 10px 10px;
     display: flex;
-    left: 230px;
+    margin-left: 230px;
     background-color: #F5E8FA;
     width: 1030px;
+
 }
 
 /*position: relative;*/
@@ -57,9 +58,10 @@ h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.or {
+.or_login {
     margin-left: 120px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .p_l {
@@ -108,6 +110,22 @@ h2 {
     width: 249px;
 
 }
+.signupLink {
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.signupLinkText {
+    color: #2273ED;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .signupLinkText:hover {
+    color: #A82DF3;
+    text-decoration: underline;
+  }
+  
 
 
 /* Styles for desktop screens */
@@ -124,7 +142,7 @@ h2 {
         display: none;
     }
 
-    .container {
+    .container_login {
         /* margin-top: 25px;
         margin-left: 25px; */
         margin: 0 auto;
@@ -163,7 +181,7 @@ h2 {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    .or {
+    .or_login {
         margin-left: 120px;
         margin-top: 10px;
     }
@@ -217,6 +235,7 @@ h2 {
     .signupLink {
         margin-top: 20px;
         margin-left: 20px;
+        cursor: pointer;
     }
 
 }
@@ -232,14 +251,14 @@ h2 {
         width: auto;
         box-sizing: border-box;
     }*/
-    .container {
+    .container_login {
         max-width: 100%;
         margin-top: 110px;
         /*padding: 40px 0 40px 40px;*/
         width: 380px;
         padding: 20px 10px 40px 20px;
         display: flex;
-        left: 30%;
+        /* left: 10%; */
         flex-direction: column;
         position: absolute;
         border: 1px solid #00000052;
@@ -307,12 +326,13 @@ h2 {
         box-sizing: border-box;
     }
 
-    .container {
+    .container_login{
         max-width: 100%;
         margin-top: 110px;
         padding: 40px 40px 40px 40px;
         display: flex;
-        left: 20%;
+        /* left: 20%; */
+        margin-left: 60px;
         width: 350px;
         flex-direction: column;
         position: absolute;
@@ -348,7 +368,7 @@ h2 {
         margin-top: 40px;
         max-width: 100%;
         position: absolute;
-        margin-left: 15rem;
+        margin-left: 12rem;
     }
 
     .google {

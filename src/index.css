@@ -27,6 +27,7 @@
   --button-font:white;
   --dark-font:black;
   --container-color:#F5E8FA;
+  --link-hover:#A82DF3;
 }
 
 [data-theme='dark'] {

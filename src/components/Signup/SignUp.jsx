@@ -179,7 +179,7 @@ const SignUp = ({ toggleLogin, handleToggle }) => {
 								name="password"
 								className="password_su pl_su"
 								placeholder="Password"
-								style={{ background: `url(${view})` }}
+								// style={{ background: `url(${view})` }}
 								value={data.password}
 								onChange={handleChange}
 							/>
@@ -190,7 +190,7 @@ const SignUp = ({ toggleLogin, handleToggle }) => {
 								name="reEnterPassword"
 								className="password_su pl_su"
 								placeholder="Re-enter Password"
-								style={{ background: `url(${view})` }}
+								// style={{ background: `url(${view})` }}
 								value={data.reEnterPassword}
 								onChange={handleChange}
 							/>
@@ -201,7 +201,7 @@ const SignUp = ({ toggleLogin, handleToggle }) => {
 						{data.error && <div className="error">{data.error}</div>}
 					</form>
 					<div className="loginuplink">
-						If already have account<b onClick={handleToggle}> Login</b>
+						If already have account <b className="loginuplinkText" onClick={handleToggle}>Log In</b>
 					</div>
 				</div>
 			</div>

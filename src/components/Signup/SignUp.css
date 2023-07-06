@@ -118,6 +118,16 @@ img {
 .loginuplink {
     margin-top: 20px;
     margin-left: 25px;
+    cursor: pointer;
+}
+.loginuplinkText{
+    color: #2273ED;
+    text-decoration: none;
+    cursor: pointer;
+}
+.loginuplinkText:hover{
+    color: #A82DF3;
+    text-decoration: underline;
 }
 
 /* Styles for desktop screens */
@@ -157,6 +167,7 @@ img {
 
     .or_su {
         margin-left: 120px;
+        margin-bottom: 10px;
     }
 
     .google_su {

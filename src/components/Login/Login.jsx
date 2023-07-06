@@ -124,7 +124,7 @@ const Login = ({ toggleLogin, handleToggle }) => {
 	return (
 		<div className={`login_box ${toggleLogin ? 'active' : 'inactive'}`}>
 			<h2 className="login">Log in</h2>
-			<div className="container">
+			<div className="container_login">
 				<div className="container_right">
 					<img src={login} alt="" />
 				</div>
@@ -139,7 +139,7 @@ const Login = ({ toggleLogin, handleToggle }) => {
 								cookiePolicy={'single_host_origin'}
 							/>
 						</div>
-						<h5 className="or">or</h5>
+						<h5 className="or_login">or</h5>
 						<div>
 							<input
 								type="text"
@@ -164,9 +164,7 @@ const Login = ({ toggleLogin, handleToggle }) => {
 							Log In
 						</button>
 						<div className="signupLink">
-							<p>
-								Don't have an account? <b onClick={handleToggle}>Sign Up</b>
-							</p>
+							Don't have an account? <b className="signupLinkText" onClick={handleToggle}>Sign Up</b>
 						</div>
 						{data.error && <div className="error">{data.error}</div>}
 					</form>
